@@ -45,17 +45,12 @@ This framework simplifies the complex process of creating a custom detector into
 1.  **Analysis:** Evaluate the model using the generated performance metrics (mAP, confusion matrix) to understand its strengths and weaknesses.
 2.  **Inference:** Use the best-trained model weights (`best.pt`) to make predictions on new, unseen images of the plant.
 
-## Case Study: Ashwagandha Disease Detection
+## Case Study: Plant Diseases Detection
 
 To validate the framework, we applied it to a dataset of 100 Ashwagandha images with four classes (`healthy_leaf`, `leaf_spot`, `powdery_mildew`, `root_rot`).
 
 - **Result:** After just 30 epochs, the model successfully learned to identify the diseases, achieving an overall **mAP50 of 40.3%**.
 - **Key Insight:** The model performed exceptionally well on classes with distinct features (`powdery_mildew` mAP50: **86.9%**), demonstrating the framework's effectiveness. It also correctly identified that more data is needed for classes with subtle features (`leaf_spot`), providing actionable insights for future improvement.
-
-*(Here, you can insert an image of your Ashwagandha results to visually prove the framework's success.)*
-![Ashwagandha Case Study Results](path/to/your/prediction_image.jpg)
-
-
 
 ## Future Work
 
