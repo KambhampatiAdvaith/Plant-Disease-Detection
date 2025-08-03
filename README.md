@@ -58,3 +58,5 @@ The success of this framework opens several avenues for future development:
 - **Multi-Plant Model:** Combine the Ashwagandha, Tulsi, and other new datasets to train a single, robust model capable of diagnosing diseases across multiple medicinal plant species.
 - **Dataset Expansion:** Significantly enlarge the datasets for each plant to improve accuracy and generalization, particularly for fine-grained disease types.
 - **Edge Deployment:** Optimize and deploy the trained models on low-cost edge devices (e.g., Raspberry Pi, Jetson Nano) for real-time, in-field analysis.
+
+Developed by Shresth Agarwal and K Advaith
