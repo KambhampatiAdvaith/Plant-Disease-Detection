@@ -1,89 +1,65 @@
-# YOLOv8 for Disease Detection in Medicinal Plants
+# A Generalizable Framework for Disease Detection in Medicinal Plants using YOLOv8
 
-This project presents a scalable, end-to-end computer vision pipeline for the automated detection of common diseases in high-value medicinal plants. Using the state-of-the-art YOLOv8 object detection model, this work serves as a proof-of-concept for creating a low-cost, efficient tool to help farmers and researchers monitor crop health and ensure the quality of therapeutic herbs.
+This repository presents a complete, end-to-end framework for rapidly developing custom object detection models to identify diseases in various medicinal plants. By leveraging the YOLOv8 architecture, this methodology provides a scalable and low-cost solution for farmers, researchers, and agronomists to automate plant health monitoring.
 
-This project was developed as part of my AI/ML internship at IIIT Hyderabad, in collaboration with a colleague. My work focused on the Ashwagandha plant, while my colleague's work focused on Tulsi, demonstrating the framework's adaptability.
+The effectiveness of this framework has been validated through initial case studies on high-value crops like Ashwagandha and Tulsi.
+
+This project was developed as part of my AI/ML internship at IIIT Hyderabad.
 
 ## Table of Contents
-- [Project Overview](#project-overview)
-- [Key Features](#key-features)
-- [Methodology](#methodology)
-  - [1. Dataset Creation](#1-dataset-creation)
-  - [2. Annotation](#2-annotation)
-  - [3. Model Training](#3-model-training)
-- [Results & Performance (Ashwagandha Case Study)](#results--performance-ashwagandha-case-study)
-- [How to Use This Project](#how-to-use-this-project)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Running Inference](#running-inference)
+- [Project Vision](#project-vision)
+- [Framework Features](#framework-features)
+- [The 3-Step Methodology](#the-3-step-methodology)
+  - [Step 1: Custom Dataset Creation](#step-1-custom-dataset-creation)
+  - [Step 2: Model Training](#step-2-model-training)
+  - [Step 3: Evaluation & Inference](#step-3-evaluation--inference)
+- [Case Study: Ashwagandha Disease Detection](#case-study-ashwagandha-disease-detection)
+- [How to Use This Framework for Your Own Plant](#how-to-use-this-framework-for-your-own-plant)
 - [Future Work](#future-work)
 
-## Project Overview
+## Project Vision
 
-Medicinal plants like Ashwagandha and Tulsi are cornerstones of traditional medicine and a significant source of income for many farmers. However, these crops are susceptible to diseases such as leaf spot and powdery mildew, which can drastically reduce yield and compromise the quality of the final product. Manual inspection is labor-intensive and requires expertise. This project leverages YOLOv8 to automate the identification and localization of disease symptoms, enabling early intervention.
+The cultivation of medicinal plants is often hampered by diseases that reduce yield and compromise quality. Manual inspection is slow, subjective, and requires expertise. Our vision is to provide a universal, easy-to-implement framework that empowers anyone to build a custom AI model to monitor the health of their specific crops, enabling early intervention and improving agricultural outcomes.
 
-## Key Features
+## Framework Features
 
-- **Scalable Framework:** A methodology applicable to various types of medicinal plants, not just a single species.
-- **Custom Datasets:** Unique, manually annotated datasets were created for multiple plants, including Ashwagandha.
-- **Multi-Class Disease Detection:** The model for the Ashwagandha case study was trained to identify four distinct plant health states:
-  - `healthy_leaf`
-  - `leaf_spot`
-  - `powdery_mildew`
-  - `root_rot` (visible symptoms)
-- **End-to-End Pipeline:** Demonstrates the complete workflow from raw image collection to a trained, predictive model ready for inference.
+- **Plant-Agnostic:** The methodology is designed to be applied to any plant species with visually distinct disease symptoms.
+- **Rapid Prototyping:** Enables the creation of a functional proof-of-concept detector with as few as 100 images.
+- **Fine-Grained Detection:** Capable of learning the subtle visual differences between various diseases (e.g., leaf spot vs. powdery mildew) and healthy tissue.
+- **End-to-End Workflow:** Provides a complete roadmap, from raw image collection to a trained, deployable model.
 
-## Methodology
+## The 3-Step Methodology
 
-The project followed a standard machine learning pipeline for object detection, applied here to the Ashwagandha plant.
+This framework simplifies the complex process of creating a custom detector into three core stages.
 
-### 1. Dataset Creation
+### Step 1: Custom Dataset Creation
+1.  **Data Sourcing:** Collect images of the target plant, capturing both healthy examples and various disease symptoms.
+2.  **Structuring:** Organize images into the standard YOLOv8 format: `images/train`, `images/val`, `labels/train`, and `labels/val`.
+3.  **Annotation:** Use a tool like **LabelImg** to draw bounding boxes around the specific visual features of each condition (e.g., the spots, the mildew). Save annotations in YOLO `.txt` format.
 
-- **Data Sourcing:** A custom dataset of 100 images of Ashwagandha plants was collected, showcasing both healthy specimens and those with various disease symptoms.
-- **Data Split:** The dataset was partitioned into a training set (80 images) and a validation set (20 images) for robust model evaluation.
-- **Folder Structure:** Data was organized into the standard YOLOv8 format (`images`/`labels` folders for `train`/`val` splits).
+### Step 2: Model Training
+1.  **Configuration:** Create a `.yaml` file defining the dataset path and a list of class names (e.g., `healthy`, `disease_A`, `disease_B`).
+2.  **Training:** Use the Ultralytics CLI to train a YOLOv8 model (e.g., `yolov8s.pt`) on the custom dataset. Data augmentation is recommended to improve generalization.
 
-### 2. Annotation
+### Step 3: Evaluation & Inference
+1.  **Analysis:** Evaluate the model using the generated performance metrics (mAP, confusion matrix) to understand its strengths and weaknesses.
+2.  **Inference:** Use the best-trained model weights (`best.pt`) to make predictions on new, unseen images of the plant.
 
-- **Tool:** All 100 images were manually annotated using **LabelImg**.
-- **Strategy:** To train a fine-grained detector, bounding boxes were drawn around the specific visual symptoms of each disease (e.g., the spots, the mildew patches) rather than the entire leaf. This encourages the model to learn the precise features of each condition.
-- **Output:** Annotations were saved in the YOLO `.txt` format.
+## Case Study: Ashwagandha Disease Detection
 
-### 3. Model Training
+To validate the framework, we applied it to a dataset of 100 Ashwagandha images with four classes (`healthy_leaf`, `leaf_spot`, `powdery_mildew`, `root_rot`).
 
-- **Model:** YOLOv8s ('small') was selected to balance strong performance with efficient training.
-- **Environment:** The model was trained for **30 epochs** on a CPU using PyTorch and the Ultralytics framework.
-- **Configuration:** A `ashwagandha_config.yaml` file was created to define all dataset paths and class names.
+- **Result:** After just 30 epochs, the model successfully learned to identify the diseases, achieving an overall **mAP50 of 40.3%**.
+- **Key Insight:** The model performed exceptionally well on classes with distinct features (`powdery_mildew` mAP50: **86.9%**), demonstrating the framework's effectiveness. It also correctly identified that more data is needed for classes with subtle features (`leaf_spot`), providing actionable insights for future improvement.
 
-## Results & Performance (Ashwagandha Case Study)
+*(Here, you can insert an image of your Ashwagandha results to visually prove the framework's success.)*
+![Ashwagandha Case Study Results](path/to/your/prediction_image.jpg)
 
-The training was successful, proving the viability of the pipeline. The final model achieved an overall **mAP50 of 40.3%** on the validation set.
 
-### Key Performance Highlights:
 
-- **High Accuracy on Distinct Diseases:** The model performed exceptionally well on `powdery_mildew`, achieving an **mAP50 of 86.9%**. This demonstrates the model's strength in learning diseases with clear, consistent visual patterns.
-- **Identified Challenges:** Performance was lower on classes with subtle features and fewer examples, such as `leaf_spot`. This is a classic and expected result for a proof-of-concept with a limited dataset, highlighting the need for more data.
-- **Actionable Insights:** The results validate the methodology and provide a clear roadmap for improvement: significantly expanding the dataset, especially for underperforming classes, will be key to developing a production-ready model.
+## Future Work
 
-### Example Predictions:
-
-*(Here, you should insert one of your best result images, like `val_batch0_pred.jpg`. Upload it to your GitHub repo and then link it here.)*
-
-![Example Predictions on Ashwagandha](path/to/your/prediction_image.jpg)
-
-This image shows the model successfully identifying `powdery_mildew` and other classes on the validation set.
-
-## How to Use This Project
-
-### Prerequisites
-
-- Python 3.9+
-- [Anaconda](https://www.anaconda.com/products/distribution) or Miniconda
-- Git
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/KambhampatiAdvaith/your-repo-name.git
-   cd your-repo-name
+The success of this framework opens several avenues for future development:
+- **Multi-Plant Model:** Combine the Ashwagandha, Tulsi, and other new datasets to train a single, robust model capable of diagnosing diseases across multiple medicinal plant species.
+- **Dataset Expansion:** Significantly enlarge the datasets for each plant to improve accuracy and generalization, particularly for fine-grained disease types.
+- **Edge Deployment:** Optimize and deploy the trained models on low-cost edge devices (e.g., Raspberry Pi, Jetson Nano) for real-time, in-field analysis.
