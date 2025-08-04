@@ -1,0 +1,37 @@
+{
+  "healthy_leaf": {
+    "suggestion": "The leaf appears to be healthy. No immediate action is required.",
+    "care_tips": [
+      "Maintain a consistent watering schedule, allowing soil to dry slightly between waterings.",
+      "Ensure the plant receives at least 4-6 hours of indirect sunlight daily.",
+      "Continue to monitor for any changes in appearance."
+    ]
+  },
+  "leaf_spot": {
+    "suggestion": "Leaf Spot Detected. This fungal or bacterial issue can spread. Isolate the plant if possible.",
+    "care_tips": [
+      "Prune and safely destroy any infected leaves to prevent further spread.",
+      "Avoid getting the leaves wet; water the plant at the base.",
+      "Improve air circulation by spacing plants appropriately.",
+      "For severe cases, a copper-based or neem oil fungicide may be required."
+    ]
+  },
+  "powdery_mildew": {
+    "suggestion": "Powdery Mildew Detected. This common fungal disease thrives in high humidity.",
+    "care_tips": [
+      "Gently wipe or wash the mildew off the leaves.",
+      "Increase air circulation and reduce humidity around the plant.",
+      "A solution of baking soda (1 tbsp) and a drop of liquid soap in 1 gallon of water can be an effective spray.",
+      "Ensure the plant has adequate spacing and access to morning sun to dry off dew."
+    ]
+  },
+  "root_rot": {
+    "suggestion": "Symptoms consistent with Root Rot Detected. This is a critical condition, often caused by overwatering.",
+    "care_tips": [
+      "Immediately stop watering and allow the soil to dry out completely.",
+      "Gently remove the plant from its pot and inspect the roots. Trim any black, soft, or mushy roots.",
+      "Repot in a new pot with fresh, sterile, well-draining soil.",
+      "Ensure the pot has sufficient drainage holes and only water when the top inch of soil is dry."
+    ]
+  }
+}
