@@ -1,6 +1,6 @@
 # 🌿 Medicinal Plant Disease Detection Framework
 
-![App Screenshot](path/to/your/app_screenshot.png)
+![App Screenshot]("C:\Users\K Advaith\OneDrive\Desktop\image.png")
 
 This repository contains the source code for an end-to-end framework that uses **YOLOv8** to detect diseases in medicinal plants. The project provides a complete, user-friendly solution, including a web-based dashboard for live and image-based diagnosis, and a professional report generation feature.
 
