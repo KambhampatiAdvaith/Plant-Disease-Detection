@@ -1,6 +1,4 @@
-# 🌿 Medicinal Plant Disease Detection Framework
-
-![App Screenshot]("C:\Users\K Advaith\OneDrive\Desktop\image.png")
+<img width="1919" height="861" alt="image" src="https://github.com/user-attachments/assets/1de41b07-a269-4bc7-82ae-a855456f20a5" /># 🌿 Medicinal Plant Disease Detection Framework
 
 This repository contains the source code for an end-to-end framework that uses **YOLOv8** to detect diseases in medicinal plants. The project provides a complete, user-friendly solution, including a web-based dashboard for live and image-based diagnosis, and a professional report generation feature.
 
@@ -27,5 +25,4 @@ To validate the framework, a YOLOv8s model was trained on a custom-annotated dat
 
 - **Performance:** After 30 epochs, the model achieved a promising **mAP50 of 40.3%**, with exceptional performance on visually distinct diseases like `powdery_mildew` (mAP50 of 86.9%). This result confirms the viability of the framework as a strong proof-of-concept.
 
-![Ashwagandha Results](path/to/your/results_collage.png)
 
