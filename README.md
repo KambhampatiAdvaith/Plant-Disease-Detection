@@ -56,6 +56,6 @@ This project can be used as a template to train a detector for any plant. The 3-
 
 ### 📈 Future Work
 
-- **Multi-Plant Model:** Combine the Ashwagandha, Tulsi, and other datasets to train a single, robust model capable of diagnosing diseases across multiple medicinal plant species.
+- **Multi-Plant Model:** Combine the Medicinal plants main dataset and other datasets to train a single, robust model capable of diagnosing diseases across multiple medicinal plant species.
 - **Dataset Expansion:** Significantly enlarge the datasets for each plant to improve accuracy and generalization, particularly for fine-grained or subtle disease types.
 - **Edge Deployment:** Optimize and deploy the trained models on low-cost edge devices like a Raspberry Pi or Jetson Nano for real-time, in-field analysis.
