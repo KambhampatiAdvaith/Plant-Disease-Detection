@@ -1,6 +1,7 @@
-# Plant Disease Detection Framework using YOLOv11
+<img width="1918" height="847" alt="img" src="https://github.com/user-attachments/assets/cc02f0a4-e373-4bd4-abb5-7d6bde653855" /># Plant Disease Detection Framework using YOLOv11
 
-<img width="1919" height="861" alt="image" src="https://github.com/user-attachments/assets/645ad80a-f01c-42fa-9da8-e781547365a6" />
+<img width="1918" height="847" alt="img" src="https://github.com/user-attachments/assets/4bc6c97e-2cdc-490a-8126-9621cfdaf708" />
+
 
 This repository contains a complete, end-to-end framework for identifying diseases in medicinal plants using a custom-trained **YOLOv11** object detection model. The project features an interactive **Streamlit** dashboard that allows for both live diagnosis via webcam and detailed report generation from uploaded images.
 
@@ -43,3 +44,16 @@ conda activate yolo_plants
 
 streamlit run app.py
 
+### 🔬 Framework Methodology
+
+This project can be used as a template to train a detector for any plant. The 3-step methodology is:
+
+1.  **Custom Dataset Creation:** Source and organize images into `images/train` and `images/val` folders, then create corresponding `labels/train` and `labels/val` folders.
+2.  **Annotation:** Use a tool like **LabelImg** to draw bounding boxes and save annotations in the `YOLO .txt` format.
+3.  **Model Training:** Create a `.yaml` configuration file pointing to your dataset and run the `yolo train` command to create your own `best.pt` model weights.
+
+### 📈 Future Work
+
+- **Multi-Plant Model:** Combine the Ashwagandha, Tulsi, and other datasets to train a single, robust model capable of diagnosing diseases across multiple medicinal plant species.
+- **Dataset Expansion:** Significantly enlarge the datasets for each plant to improve accuracy and generalization, particularly for fine-grained or subtle disease types.
+- **Edge Deployment:** Optimize and deploy the trained models on low-cost edge devices like a Raspberry Pi or Jetson Nano for real-time, in-field analysis.
