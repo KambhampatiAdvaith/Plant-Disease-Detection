@@ -44,6 +44,8 @@ conda activate yolo_plants
 
 streamlit run app.py
 
+``` 
+
 ### 🔬 Framework Methodology
 
 This project can be used as a template to train a detector for any plant. The 3-step methodology is:
