@@ -1,10 +1,12 @@
-streamlit
-ultralytics
-torch
-torchvision
-torchaudio
-fpdf2
-streamlit-webrtc
-opencv-python
-numpy==1.24.4 --only-binary=:all:
-Pillow
+# Core dependencies
+torch==2.5.0
+ultralytics==8.1.25
+streamlit==1.29.0
+numpy==1.24.4 --only-binary=:all: 
+Pillow==9.5.0
+opencv-python==4.9.0.80
+streamlit-webrtc==0.45.0
+fpdf==1.7.2
+
+# Utility packages for HTML/PDF and networking
+requests==2.31.0
