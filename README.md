@@ -1,4 +1,4 @@
-<img width="1918" height="847" alt="img" src="https://github.com/user-attachments/assets/cc02f0a4-e373-4bd4-abb5-7d6bde653855" /># Plant Disease Detection Framework using YOLOv11
+# Plant Disease Detection Framework using YOLOv11
 
 <img width="1918" height="847" alt="img" src="https://github.com/user-attachments/assets/4bc6c97e-2cdc-490a-8126-9621cfdaf708" />
 
