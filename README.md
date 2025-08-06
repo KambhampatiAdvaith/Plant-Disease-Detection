@@ -1,6 +1,7 @@
 # Plant Disease Detection Framework using YOLOv11
 
-<img width="1918" height="847" alt="img" src="https://github.com/user-attachments/assets/4bc6c97e-2cdc-490a-8126-9621cfdaf708" />
+<img width="1918" height="851" alt="Screenshot 2025-08-06 204555" src="https://github.com/user-attachments/assets/75ed268b-1cb3-4f77-a435-68c0b3fb415d" />
+
 
 
 This repository contains a complete, end-to-end framework for identifying diseases in plants using a custom-trained **YOLOv11** object detection model. The project features an interactive **Streamlit** dashboard that allows for both live diagnosis via webcam and detailed report generation from uploaded images.
