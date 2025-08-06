@@ -34,3 +34,9 @@ Open your terminal or command prompt and run the following commands to clone the
 ```bash
 git clone https://github.com/Shresth-Agarwal/Plant-Disease-Detection.git
 cd Plant-Disease-Detection
+
+# Create a new environment named 'yolo_plants' with Python 3.9
+conda create --name yolo_plants python=3.9
+
+# Activate the new environment
+conda activate yolo_plants
