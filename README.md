@@ -3,9 +3,9 @@
 <img width="1918" height="847" alt="img" src="https://github.com/user-attachments/assets/4bc6c97e-2cdc-490a-8126-9621cfdaf708" />
 
 
-This repository contains a complete, end-to-end framework for identifying diseases in medicinal plants using a custom-trained **YOLOv11** object detection model. The project features an interactive **Streamlit** dashboard that allows for both live diagnosis via webcam and detailed report generation from uploaded images.
+This repository contains a complete, end-to-end framework for identifying diseases in plants using a custom-trained **YOLOv11** object detection model. The project features an interactive **Streamlit** dashboard that allows for both live diagnosis via webcam and detailed report generation from uploaded images.
 
-The framework is designed to be plant-agnostic and its effectiveness has been demonstrated through an initial case study on **Medicinal Plants**. This project showcases a full MLOps lifecycle, from data creation to a user-facing application.
+The framework is designed to be plant-agnostic and its effectiveness has been demonstrated through an initial case study on **Plants**. This project showcases a full MLOps lifecycle, from data creation to a user-facing application.
 
 **Developed by:** [Shresth Agarwal](https://github.com/Shresth-Agarwal) and [K Advaith](https://github.com/KambhampatiAdvaith)
 
@@ -56,6 +56,6 @@ This project can be used as a template to train a detector for any plant. The 3-
 
 ### 📈 Future Work
 
-- **Multi-Plant Model:** Combine the Medicinal plants main dataset and other datasets to train a single, robust model capable of diagnosing diseases across multiple medicinal plant species.
+- **Multi-Plant Model:** Combine the plants main dataset and other datasets to train a single, robust model capable of diagnosing diseases across multiple medicinal plant species.
 - **Dataset Expansion:** Significantly enlarge the datasets for each plant to improve accuracy and generalization, particularly for fine-grained or subtle disease types.
 - **Edge Deployment:** Optimize and deploy the trained models on low-cost edge devices like a Raspberry Pi or Jetson Nano for real-time, in-field analysis.
