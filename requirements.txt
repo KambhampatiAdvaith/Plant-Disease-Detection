@@ -6,5 +6,5 @@ torchaudio
 fpdf2
 streamlit-webrtc
 opencv-python
-numpy
+numpy==1.24.4 --only-binary=:all:
 Pillow
