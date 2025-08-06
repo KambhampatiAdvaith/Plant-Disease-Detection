@@ -4,7 +4,7 @@
 
 This repository contains a complete, end-to-end framework for identifying diseases in medicinal plants using a custom-trained **YOLOv11** object detection model. The project features an interactive **Streamlit** dashboard that allows for both live diagnosis via webcam and detailed report generation from uploaded images.
 
-The framework is designed to be plant-agnostic and its effectiveness has been demonstrated through an initial case study on **Ashwagandha**. This project showcases a full MLOps lifecycle, from data creation to a user-facing application.
+The framework is designed to be plant-agnostic and its effectiveness has been demonstrated through an initial case study on **Medicinal Plants**. This project showcases a full MLOps lifecycle, from data creation to a user-facing application.
 
 **Developed by:** [Shresth Agarwal](https://github.com/Shresth-Agarwal) and [K Advaith](https://github.com/KambhampatiAdvaith)
 
