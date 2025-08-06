@@ -13,8 +13,8 @@ import numpy as np
 from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
 
 # --- CONFIGURATION ---
-MODEL_PATH = "Plant-Disease-Detection-main/runs/detect/train/weights/best.pt"
-CARE_TIPS_PATH = "Plant-Disease-Detection-main/care_tips.json"
+MODEL_PATH = "runs/detect/train/weights/best.pt"
+CARE_TIPS_PATH = "care_tips.json"
 
 # --- HELPER FUNCTIONS ---
 
@@ -293,4 +293,5 @@ def main():
         )
 
 if __name__ == "__main__":
+
     main()
