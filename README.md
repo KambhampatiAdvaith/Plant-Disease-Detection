@@ -35,17 +35,4 @@ Open your terminal or command prompt and run the following commands to clone the
 git clone https://github.com/Shresth-Agarwal/Plant-Disease-Detection.git
 cd Plant-Disease-Detection
 
-# Create a new environment named 'yolo_plants' with Python 3.9
-conda create --name yolo_plants python=3.9
 
-# Activate the new environment
-conda activate yolo_plants
-
-pip install -r requirements.txt
-
-📥  Download the YOLOv11 Trained Model
-Go to the Releases Page.
-
-Download the best.pt model file from the latest release.
-
-Place the file inside the following directory structure:
