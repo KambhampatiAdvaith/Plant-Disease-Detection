@@ -42,7 +42,7 @@ conda create --name yolo_plants python=3.9 -y
 # Activate the new environment
 conda activate yolo_plants
 
-streamlit run app.py
+streamlit run app.py --server.port 10000 --server.address 0.0.0.0
 
 ``` 
 
