@@ -1,10 +1,10 @@
-# Compatible with Python 3.13
-torch==2.5.0
-ultralytics==8.3.11  
-streamlit==1.33.0    
-numpy==2.3.2         
-Pillow==10.3.0
+# Core dependencies
+streamlit==1.29.0
+ultralytics==8.1.25
+torch==2.0.1
+numpy==1.24.4
+Pillow==9.5.0
+fpdf==1.7.2
 opencv-python==4.9.0.80
 streamlit-webrtc==0.45.0
-fpdf==1.7.2
 requests==2.31.0
