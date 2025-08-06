@@ -1,12 +1,10 @@
-# Core Dependencies
-torch==2.5.0
-streamlit==1.29.0
-ultralytics==8.1.25
-numpy==1.24.4
-Pillow==9.5.0
-fpdf==1.7.2
-opencv-python==4.9.0.80
-streamlit-webrtc==0.45.0
-
-# For HTML/PDF formatting and base64
-requests==2.31.0
+streamlit
+ultralytics
+torch
+torchvision
+torchaudio
+fpdf2
+streamlit-webrtc
+opencv-python
+numpy
+Pillow
