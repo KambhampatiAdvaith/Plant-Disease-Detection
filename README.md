@@ -8,6 +8,8 @@ This repository contains a complete, end-to-end framework for identifying diseas
 
 The framework is designed to be plant-agnostic and its effectiveness has been demonstrated through an initial case study on **Plants**. This project showcases a full MLOps lifecycle, from data creation to a user-facing application.
 
+*Explore the live app*: [Plant Disease Detector]([https://your-app-link.com](https://plant-disease-detection-3j49.onrender.com/))
+
 **Developed by:** [Shresth Agarwal](https://github.com/Shresth-Agarwal) and [K Advaith](https://github.com/KambhampatiAdvaith)
 
 ---
