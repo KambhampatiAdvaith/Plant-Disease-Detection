@@ -13,6 +13,18 @@ The framework is designed to be plant-agnostic and its effectiveness has been de
 **Developed by:** [Shresth Agarwal](https://github.com/Shresth-Agarwal) and [K Advaith](https://github.com/KambhampatiAdvaith)
 
 ---
+## 🎯 Project Motivation & Significance
+
+This project was developed to address critical challenges in the cultivation of high-value medicinal plants.
+
+*   **The Problem:** Traditional disease monitoring relies on manual inspection, which is slow, labor-intensive, requires expert knowledge, and is not scalable. This often leads to delayed treatment, significant crop loss, and inconsistent product quality.
+
+*   **The Necessity:** There is an urgent need for an accessible, low-cost, and automated solution. This project provides a necessary framework that empowers farmers and researchers to perform rapid and consistent health assessments using simple camera technology.
+
+*   **The Significance:** Solving this problem has a direct impact on:
+    *   **Economic Stability:** Protecting crop yields and ensuring the livelihood of farmers.
+    *   **Consumer Health:** Guaranteeing the quality and safety of the final therapeutic products.
+    *   **Environmental Sustainability:** Enabling targeted treatments (precision agriculture) and reducing the overuse of chemical pesticides.
 
 ## ✨ Key Features
 
