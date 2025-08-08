@@ -13,7 +13,7 @@ The framework is designed to be plant-agnostic and its effectiveness has been de
 **Developed by:** [Shresth Agarwal](https://github.com/Shresth-Agarwal) and [K Advaith](https://github.com/KambhampatiAdvaith)
 
 ---
-## 🎯 Project Motivation & Significance
+##  Project Motivation & Significance
 
 This project was developed to address critical challenges in the cultivation of high-value medicinal plants.
 
@@ -26,18 +26,18 @@ This project was developed to address critical challenges in the cultivation of 
     *   **Consumer Health:** Guaranteeing the quality and safety of the final therapeutic products.
     *   **Environmental Sustainability:** Enabling targeted treatments (precision agriculture) and reducing the overuse of chemical pesticides.
 
-## ✨ Key Features
+##  Key Features
 
 - **Plant-Agnostic Framework:** The methodology is designed to be easily adapted to detect diseases in any plant species.
 - **Interactive Web Dashboard:** A user-friendly interface built with **Streamlit** supporting two powerful modes:
-    - **📁 Image Upload & Report:** Analyze a static image to get a full diagnostic report in HTML and PDF formats.
-    - **📹 Live Webcam Detection:** Perform real-time disease detection using a live camera feed, a key add-on feature.
+    - ** Image Upload & Report:** Analyze a static image to get a full diagnostic report in HTML and PDF formats.
+    - ** Live Webcam Detection:** Perform real-time disease detection using a live camera feed, a key add-on feature.
 - **Professional Report Generation:** Automatically generates detailed reports including the annotated image, detected conditions, confidence levels, and practical care tips.
 - **Custom Model Training:** The project was built on a custom-annotated dataset, demonstrating the full workflow from scratch.
 
 ---
 
-## 🚀 Getting Started: How to Clone and Run This Project
+## How to Clone and Run This Project
 
 Follow these steps precisely to get the application running on your local machine.
 
@@ -61,7 +61,7 @@ streamlit run app.py --server.port 10000 --server.address 0.0.0.0
 
 ``` 
 
-### 🔬 Framework Methodology
+### Framework Methodology
 
 This project can be used as a template to train a detector for any plant. The 3-step methodology is:
 
@@ -69,7 +69,7 @@ This project can be used as a template to train a detector for any plant. The 3-
 2.  **Annotation:** Use a tool like **LabelImg** to draw bounding boxes and save annotations in the `YOLO .txt` format.
 3.  **Model Training:** Create a `.yaml` configuration file pointing to your dataset and run the `yolo train` command to create your own `best.pt` model weights.
 
-### 📈 Future Work
+### Future Work
 
 - **Multi-Plant Model:** Combine the plants main dataset and other datasets to train a single, robust model capable of diagnosing diseases across multiple medicinal plant species.
 - **Dataset Expansion:** Significantly enlarge the datasets for each plant to improve accuracy and generalization, particularly for fine-grained or subtle disease types.
